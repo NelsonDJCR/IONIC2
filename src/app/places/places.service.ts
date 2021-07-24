@@ -14,7 +14,13 @@ export class PlacesService {
         id:'1',
         title:'Inc,and Sons,LLC,Group',
         img:'http://placeimg.com/640/480/business',
-        comments:['asdas','asdas']
+        comments:['asdas','col']
+      },
+      {
+        id:'2',
+        title:'deploy',
+        img:'http://placeimg.com/640/480/city',
+        comments:[]
       },
   ]
 
@@ -40,9 +46,11 @@ export class PlacesService {
   }
 
   deletePlace(placeId: string){
-    this.places.filter(place => {
+    
+    this.places = this.places.filter(place => {
       return  place.id !== placeId
     })
+    
   }
 
   

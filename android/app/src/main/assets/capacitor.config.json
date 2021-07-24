@@ -1,0 +1,6 @@
+{
+	"appId": "com.nelson.app",
+	"appName": "Ionic",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
