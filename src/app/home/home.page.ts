@@ -15,7 +15,6 @@ export class HomePage implements OnInit {
   ngOnInit(){
     return this.api.getPhotos().subscribe(r => {
       this.photos = r;
-      
     })
   }
 
